@@ -151,7 +151,27 @@ console.log("500'den küçük sayılar küçükten büyüğe sıralanmış:", si
 
 // 3f çözümü
 
-/* kodlar buraya */
+tekraredensayilar = [];
+
+const sayiTekrarSayisi = {};  
+
+sayilar.forEach((sayi) => {
+  if (sayiTekrarSayisi[sayi]) {
+    sayiTekrarSayisi[sayi]++;
+  } else {
+    sayiTekrarSayisi[sayi] = 1;
+  }
+});
+
+for (const sayi in sayiTekrarSayisi) {
+  if (sayiTekrarSayisi[sayi] > 1) {
+    tekraredensayilar.push(
+      `${sayi} sayısı ${sayiTekrarSayisi[sayi]} kere tekrar edilmiştir`
+    );
+  }
+}
+
+console.log("Tekrar eden sayılar ve tekrar sayıları:", tekraredensayilar);  
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
