@@ -116,9 +116,20 @@ for (let i = 1; i < sayilar.length; i++) {
   }
 }
 
+console.log("En büyük sayı:", enbuyuk);
+console.log("En küçük sayı:", enkucuk);
+
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = [];
+
+sayilar.forEach((sayi) => {
+  if (sayi % 3 === 0) {
+    ucetambolunenler.push(sayi);
+  }
+});
+
+console.log("3'ün tam katı olan sayılar:", ucetambolunenler);
 
 // 3c çözümü:
 
