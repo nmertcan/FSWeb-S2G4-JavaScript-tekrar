@@ -92,6 +92,7 @@ console.log(CemberinAlani(15, pi));
 */
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
+console.log("Sayılar dizisi eleman sayısı :" , sayilar.length);
 
 let ucetambolunenler,
   enkucuk,
